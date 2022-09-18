@@ -1,0 +1,568 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+*
+{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  color: #1f4568;
+}
+
+body{
+background-image: url("https://image.ibb.co/de6JzG/bitmap_1_1.png");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+/* *********************** CARDS *********************** */
+
+.navbar
+{
+    background-color:#ffe2ff;
+}
+.flip-card {
+    float: left;
+    margin: 30px;
+      width: 100%;
+    max-width: 300px;
+    height: 480px;
+    perspective: 1000px;
+      background-color: 
+          transparent;
+  }
+  
+  .flip-card-img {
+      height: 300px;
+      overflow: hidden;
+      background-color: white;
+  }
+  
+  .flip-card img {
+      width: 100%;
+  }
+  
+  .flip-card-text {
+      padding: 10px;
+  }
+  
+  .flip-card h2 {
+      font-weight: 600;
+      font-size: 1.8em;
+  }
+  
+  .flip-card p.title {
+    color: grey;
+    font-size: 1.5em;
+  }
+  
+  .flip-card p {
+      font-size: 1em;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: 
+          preserve-3d;
+    box-shadow: 
+          0 4px 8px 0 
+          rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover 
+  .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front a, 
+  .flip-card-back a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  
+  .flip-card-front a:hover,
+  .flip-card-back a:hover {
+    color: hotpink;
+  }
+  
+  .flip-card-front, 
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility:
+          hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    color: black;
+      border: 
+          5px solid lightgray;
+      background-color: white;
+  }
+  
+  .flip-card-back {
+      color: black;
+      border: 5px solid #ced1fa;
+    transform: rotateY(180deg);
+      background-color: #eeeeee;
+  }
+  
+  .flip-card-back i {
+      padding: 15px;
+  }
+
+
+  .flip-card-text p{
+    font-size: 15px;
+    color: aliceblue;
+    background-color: black;
+    margin: 40px 1px 1px 10px;
+    padding: 3px;
+  }
+
+  .buttons{
+    font-size: 5px;
+  }
+
+  .pen-info {
+    flex: 0 0 100%;
+    text-align: center;
+}
+
+.pen-info__title {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 40px;
+    letter-spacing: 1.8px;
+    margin: 0;
+}
+
+.pen-info__p {
+    font-size: 17px;
+}
+.pen 
+{
+  flex: 0 0 100%;
+  text-align: center;
+}
+.pen_title 
+{
+  font-family: 'Abril Fatface', cursive;
+    font-size: 40px;
+    letter-spacing: 1.8px;
+    margin: 0;
+}
+
+/* *************** Header ***************** */
+
+.navbar h1{
+
+  padding-left: 60px;
+
+}
+
+.navbar ul{
+
+  padding-right: 50px;
+
+}
+
+ul{
+  display:flex;
+  justify-content:left;
+  align-items:center;
+}
+
+li {
+  color: rgb(8, 8, 8);
+  list-style-type:none; 
+  padding: 25px 15px;
+}
+
+.navbar{
+  background-color: transparent;
+  font-size: 20px;
+  text-align: left;
+}
+
+.navbar i{
+  padding-left: 30px;
+  padding-bottom: 10px;
+}
+
+nav h1{
+  font-size: 50px;
+  padding-right: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* ************* Create Button **************** */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700italic);
+
+*{margin: 0px; padding: 0px}
+
+button{
+  color:black;
+  text-align: right;
+  padding: 20px;
+}
+
+
+a{
+   text-decoration:none;
+   color:#fff;
+}
+
+.main{
+  width: 100%;
+}
+
+.sub-main{
+  width: 100%;
+  margin:35px;
+  float: right;
+  text-align: right;
+}
+
+.button-three{
+  text-align: right;
+  cursor: pointer;
+  font-size:24px;
+  margin: 0 90px 0 100px;
+}
+/*Button Three*/
+.button-three {
+    position: relative;
+    background-color:  #6f79ff;
+    color: #000;
+    border: none;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.button-three:hover{
+   background:#fff;
+   box-shadow:0px 2px 10px 5px #97B1BF;
+   color:#000;
+}
+
+.button-three:after {
+    content: "";
+    background:  #6f79ff;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button-three:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+/* ************** Search Bar *********************** */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid  #6f79ff;
+  border-right: none;
+  padding: 5px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: black;
+}
+
+.searchButton {
+  width: 40px;
+  height: 50px;
+  color: white;
+  border: 1px solid #ffe2ff;
+  background:  #6f79ff;
+  text-align: right;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 40px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 40%;
+  position: absolute;
+  top: 26%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.searchButton svg{
+
+  color: #000;
+  align-items: center;
+  margin-bottom: 80px;
+  margin-left: -8px;
+
+}
+
+/* ***************** POP-UP ******************** */
+
+.popup{
+
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-width: 200px;
+  border-color: #bcc1fe;
+
+}
+
+.popup-inner{
+  border-style: solid;
+  border-width: 10px;
+  border-color: #bcc1fe;
+
+  position: absolute;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  max-width: 640px;
+  background-color: #FFF;
+}
+
+.popup-inner .close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.close-btn {
+  padding: 2px;
+  border-radius: 10%;
+  border-color:  white;
+  background-color: transparent;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.create input {
+  border: 1px solid  #6f79ff;
+  background-color:  #f6f7ff;
+  width: 250px;
+  border-radius: 3px;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 10px 15px;
+  margin-top: 20px;
+  display: block;
+  /* text-align: center; */
+  font-size: 18px;
+  color: black;
+  /* font-weight: 300; */
+}
+
+.create h4{
+  margin-top: 40px
+}
+
+.CreateComEv {
+  size: 5px;
+  margin-top: 50px; 
+  background-color: #bcc1fe;
+}
+
+/* ****************** Profile ***************************** */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
+
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #222;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: Montserrat;
+    color: #b3afbf;
+} */
+
+.card {
+  margin: auto;
+    padding: 15px;
+    width: 350px;
+    background: #222;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
+    user-select: none;
+}
+
+.cover-photo {
+    position: relative;
+    background: url(https://i.imgur.com/jxyuizJ.jpeg);
+    background-size: cover;
+    height: 180px;
+    border-radius: 5px 5px 0 0;
+}
+
+.profile {
+    position: absolute;
+    width: 120px;
+    bottom: -60px;
+    left: 15px;
+    border-radius: 50%;
+    border: 2px solid #222;
+    background: #222;
+    padding: 5px;
+}
+
+.profile-name {
+    font-size: 20px;
+    margin: 25px 0 0 120px;
+    color: #fff;
+}
+
+.about-p {
+    margin-top: 30px;
+    line-height: 1.6;
+}
+
+.btn {
+    margin: 30px 15px;
+    background:  #6f79ff;
+    padding: 10px 25px;
+    border-radius: 3px;
+    border: 1px solid  #6f79ff;
+    font-weight: bold;
+    font-family: Montserrat;
+    cursor: pointer;
+    color: #222;
+    transition: 0.2s;
+}
+
+.btn:last-of-type {
+    background: transparent;
+    border-color:  #6f79ff;
+    color:  #6f79ff;
+}
+
+.btn:hover {
+    background:  #6f79ff;
+    color:  #6f79ff;
+    background-color:  #6f79ff;
+}
+
+.icons {
+    width: 180px;
+    margin: 0 auto 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.icons i {
+    cursor: pointer;
+    padding: 5px;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.icons i:hover {
+    color:  #6f79ff;
+    background-color: #6f79ff;
+}
+
+
+/* ***************** DashBoard ********************** */
+
+.Dash h3{
+  position: relative;
+  margin: 60px;
+}
+
+.Events h4{
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+
+}
+
+.Com h4{
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+
+}
+
+.Events{
+  /* position: absolute; */
+  margin-top: 60px;
+  margin-left: 60px;
+}
+
+.Com{
+  /* position: absolute; */
+  margin-top: 600px;
+  margin-left: 60px;
+}
+
+.chat{
+  text-align: center;
+  padding: 2px;
+}

@@ -1,0 +1,1 @@
+// try creating the footer and header independent of these community vagera pages.
